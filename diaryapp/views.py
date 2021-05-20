@@ -4,6 +4,7 @@ from .models import Diaryapp
 
 # Create your views here.
 def home(request):
+    number = Diaryapp.objects.count
     return render(request, 'home.html')
 
 def content(request):
